@@ -2,17 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-  padding: 0px;
-  margin: 0s;
-}
-body{
-  width:100vw;
+
+html, body {
+  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  cursor: url('/assets/img/custom-cursor.png'), auto; /* Adjust path as necessary */
+}
+
+.gtemore-btn:hover{
+  cursor:url('../src/assets//img//cursor-pointer2.jpg'),auto;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 10px; 
+  height: 10px; 
+  background-color: black;
+  border-radius: 50%;
+  pointer-events: none; 
+  transform: translate(-50%, -50%);
+  transition: 0.1s;
 }
 a {
- 
   text-decoration: inherit;
+}
+
+/* herSection css */
+.hero-section{
+  animation: slideshow 40s infinite; 
+}
+@keyframes slideshow {
+  0% {
+    background-image: url('./assets/img/food1.webp');
+  }
+  20% {
+    background-image: url('./assets/img/food2.jpg');
+  }
+  25% {
+    background-image: url('./assets/img/food3.jpg');
+  }
+  45% {
+    background-image: url('./assets/img/food5.jpg');
+  }
+  50% {
+    background-image: url('./assets/img/food6.webp');
+  }
+  70% {
+    background-image: url('./assets/img/food7.jpg');
+  }
+  75% {
+    background-image: url('./assets/img/food1.webp');
+  }
+  95% {
+    background-image: url('./assets/img/food2.jpg');
+  }
+  100% {
+    background-image: url('./assets/img/food3.jpg');
+  }
 }
