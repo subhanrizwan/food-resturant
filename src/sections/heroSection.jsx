@@ -16,7 +16,7 @@ const HeroSection = () => {
           }}
         >
           <div className="text-wrap w-1/2">
-            <h1 className="md:text-8xl font-bold text-white md:p-8">
+            <h1 className="md:text-7xl font-bold text-white md:p-8">
               Healthy Food Resturant
             </h1>
             <p className="font-medium md:text-1xl text-white md:p-8 md:pb-20">

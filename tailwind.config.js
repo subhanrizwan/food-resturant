@@ -8,7 +8,11 @@ export default {
     extend: {
       colors:{
         getmoreBtnColor:'#8ec038',
-        viewPlanBtnColor:'#d6111e'  
+        viewPlanBtnColor:'#d6111e',
+        cardBackgroundColor:'#f3f5ed',  
+      },
+      image:{
+
       }
      
     },

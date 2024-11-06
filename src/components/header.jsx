@@ -7,12 +7,14 @@ function Header() {
     <>
       <header className="bg-white">
         <div className="container mx-auto flex justify-between items-center p-6">
-          <div className="main-logo text-2xl font-bold text-black">My logo</div>
+          <div className="main-logo text-2xl font-bold text-getmoreBtnColor">
+            My logo
+          </div>
           <nav>
             <ul className="hidden md:flex space-x-16 text-black">
               <li>
                 <a
-                  className="hover:text-getmoreBtnColor  duration-500"
+                  className="menu relative hover:text-getmoreBtnColor  duration-500 md:py-2"
                   href="#home"
                 >
                   Home
@@ -20,7 +22,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  className="hover:text-getmoreBtnColor duration-500"
+                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
                   href="#blog"
                 >
                   About us
@@ -28,7 +30,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  className="hover:text-getmoreBtnColor duration-500"
+                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
                   href="#service"
                 >
                   Products
@@ -36,7 +38,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  className="hover:text-getmoreBtnColor duration-500"
+                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
                   href="#solution"
                 >
                   Blog
@@ -44,7 +46,7 @@ function Header() {
               </li>
               <li>
                 <a
-                  className="hover:text-getmoreBtnColor duration-500"
+                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
                   href="#contact"
                 >
                   Contacts
