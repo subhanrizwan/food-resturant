@@ -11,13 +11,10 @@ const Slidercard1 = () => {
   return (
     <>
       <SwiperSlide>
-        <div
-          className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-1xl"
-          data-swiper-autoplay="2000"
-        >
-          <div className="md:flex">
+        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden  md:max-w-1xl ">
+          <div className="md:flex flex">
             <img
-              className="h-48 w-full object-cover md:h-full md:w-60 rounded md:-ml-28 mt-1 transform hover:translate-x-4 duration-500"
+              className="h-full w-60 -ml-28 object-cover md:h-full md:w-60 rounded md:-ml-28 mt-1 transform hover:translate-x-4 duration-500"
               src={Card6}
               alt="Modern building architecture"
             />
