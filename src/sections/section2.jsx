@@ -12,12 +12,12 @@ function Section2() {
             <h1>Why customers choose us</h1>
           </div>
           <div className="description text-center md:w-[43%]">
-            <p>
+            <>
               Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
               malesuada eros nec luctus laoreet. Fusce sodales consequat velit
               eget dictum. Integer ornare magna vitae ex eleifend congue. Morbi
               sit amet nisi iaculis, fringilla orci nec.
-            </p>
+            </>
           </div>
         </div>
       </div>
