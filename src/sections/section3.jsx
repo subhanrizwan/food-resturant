@@ -1,6 +1,6 @@
 import React from "react";
 
-function Section2() {
+function Section3() {
   return (
     <>
       <div className="container">
@@ -25,4 +25,4 @@ function Section2() {
   );
 }
 
-export default Section2;
+export default Section3;
