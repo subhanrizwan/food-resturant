@@ -9,14 +9,14 @@ const HeroSection = () => {
     <>
       <div className="container">
         <div
-          className="hero-section flex flex-col items-center text-center object-cover object-center w-full md:h-[1000px] h-[800px] md:py-56"
+          className="hero-section flex flex-col bg-no-repeat bg-cover items-center text-center md:h-[1000px] h-[800px] md:py-56  "
           style={{
             width: "100vw",
-            backgroundImage: `url(${Power})`,
+            // backgroundImage: `url(${Power})`,
           }}
         >
           <div className="text-wrap md:w-1/2 w-3/4">
-            <h1 className="md:text-7xl text-5xl font-bold text-white md:p-8 pt-32 pb-10">
+            <h1 className="md:text-7xl text-5xl font-bold text-white md:p-8 pt-32 pb-10 ">
               Healthy Food Resturant
             </h1>
             <p className="font-medium md:text-1xl  text-white md:p-8 md:pb-20 pb-20">
@@ -37,3 +37,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+// style="background-image: url(&quot;http://fitmeal.like-themes.com/wp-content/uploads/2018/02/SLIDE_06.jpg&quot;); transition: transform 20000ms ease-out, opacity 1000ms; opacity: 1; transform: scale(1.2, 1.2); z-index: 2;"

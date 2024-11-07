@@ -9,7 +9,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  cursor: url('/assets/img/custom-cursor.png'), auto; /* Adjust path as necessary */
+  cursor: url('/assets/img/custom-cursor.png'), auto; 
 }
 
 .gtemore-btn:hover{
@@ -17,15 +17,16 @@ html, body {
 }
 
 .custom-cursor {
-  position: absolute;
-  width: 10px; 
-  height: 10px; 
-  background-color: black;
+  position: fixed;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
-  pointer-events: none; 
+  background-color: black;
+  pointer-events: none;
   transform: translate(-50%, -50%);
-  transition: 0.1s;
+  transition: transform 0.05s ease; /* Adjust the timing as needed */
 }
+
 a {
   position: relative;
   text-decoration: inherit;
@@ -54,34 +55,38 @@ a {
 @keyframes slideshow {
   0% {
     background-image: url('./assets/img/food1.webp');
+    filter: grayscale(100%) brightness(50%);
   }
   20% {
     background-image: url('./assets/img/food2.jpg');
+    filter: grayscale(100%) brightness(50%);
+
   }
-  25% {
+  40% {
     background-image: url('./assets/img/food3.jpg');
+    filter: grayscale(100%) brightness(50%);
+
   }
-  45% {
+  60% {
     background-image: url('./assets/img/food5.jpg');
+    filter: grayscale(0%) brightness(50%);
+
   }
-  50% {
+  80% {
     background-image: url('./assets/img/food6.webp');
-  }
-  70% {
-    background-image: url('./assets/img/food7.jpg');
-  }
-  75% {
-    background-image: url('./assets/img/food1.webp');
-  }
-  95% {
-    background-image: url('./assets/img/food2.jpg');
+    filter: grayscale(100%) brightness(50%);
+
   }
   100% {
-    background-image: url('./assets/img/food3.jpg');
+
+    background-image: url('./assets/img/food7.jpg');
+    filter:grayscale(100%) brightness(50%);
+
   }
 }
 
-button{
+
+/* button{
   position: relative;
   overflow: hidden; 
   z-index: 1;
@@ -95,11 +100,10 @@ button::before{
   height: 100%;
   transition: all 0.6s ease;
   z-index: -1; 
-  background-color: aquamarine;
   background:rgb(23, 22, 22);
   left: -100%;
 }
 
 button:hover::before {
   left: 0;
-}
+} */

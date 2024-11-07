@@ -11,7 +11,7 @@ const Slidercard1 = () => {
   return (
     <>
       <SwiperSlide>
-        <div className="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden  md:max-w-1xl ">
+        <div className="max-w-md mx-auto bg-cardBackgroundColor rounded-xl shadow-md overflow-hidden  md:max-w-1xl ">
           <div className="md:flex flex">
             <img
               className="h-full w-60 -ml-28 object-cover md:h-full md:w-60 rounded md:-ml-28 mt-1 transform hover:translate-x-4 duration-500"
