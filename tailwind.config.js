@@ -9,7 +9,8 @@ export default {
       colors:{
         getmoreBtnColor:'#8ec038',
         viewPlanBtnColor:'#d6111e',
-        cardBackgroundColor:'#f3f5ed',  
+        cardBackgroundColor:'#f3f5ed',
+        bgBorderColor:'rgba(164, 211, 92, 0.3)'  
       },
       image:{
 

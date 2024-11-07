@@ -55,7 +55,7 @@ function Header() {
             </ul>
           </nav>
 
-          <div className="flex justify-end">
+          <div className="flex justify-end first relative ">
             <Getmorebtn />
           </div>
           {/* Mobile Menu Icon */}

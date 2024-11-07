@@ -16,10 +16,16 @@ const HeroSection = () => {
           }}
         >
           <div className="text-wrap md:w-1/2 w-3/4">
+            <div class="homepage-subheading text-xl flex justify-center text-white rounded ">
+              <h6 className="welcome md:w-[15%] md:p-1 rounded-2xl text-getmoreBtnColor ">
+                Healthy Bites
+              </h6>
+            </div>
             <h1 className="md:text-7xl text-5xl font-bold text-white md:p-8 pt-32 pb-10 ">
-              Healthy Food Resturant
+              Healthy Food{" "}
+              <strong className="text-getmoreBtnColor">Resturant</strong>
             </h1>
-            <p className="font-medium md:text-1xl  text-white md:p-8 md:pb-20 pb-20">
+            <p className="font-medium md:text-1xl text-white md:p-8 md:pb-20 pb-20">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut maxime
               nesciunt nostrum alias laborum velit, eum illo fugiat molestiae
               nam sequi temporibus pariatur reiciendis quo esse iste dolorum

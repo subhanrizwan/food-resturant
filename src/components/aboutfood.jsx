@@ -8,6 +8,9 @@ function Aboutfood() {
     <>
       <div className="about-section md:flex flex-wrap justify-between md:w-[65%] md:h-[450px] p-0 m-0 -mt-0">
         <div className="child1 md:w-[42%] md:h-[100%] p-8 pl-0 ">
+          <h5 className="secttion2-subtitle bg-bgBorderColor w-44 p-1 text-center text-getmoreBtnColor font-semibold rounded-full md:ml-10 md:mb-3">
+            Wholesome Flavors
+          </h5>
           <h1 className="text-5xl font-bold pb-4 hover:text-getmoreBtnColor cursor-pointer">
             Healthy and tasty foods with
           </h1>
