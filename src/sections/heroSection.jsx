@@ -9,19 +9,19 @@ const HeroSection = () => {
     <>
       <div className="container">
         <div
-          className="hero-section flex flex-col bg-no-repeat bg-cover items-center text-center md:h-[1000px] h-[800px] md:py-56  "
+          className="hero-section flex flex-col bg-no-repeat bg-cover items-center text-center md:h-[1000px] h-[800px] md:py-56"
           style={{
             width: "100vw",
             // backgroundImage: `url(${Power})`,
           }}
         >
           <div className="text-wrap md:w-1/2 w-3/4">
-            <div class="homepage-subheading text-xl flex justify-center text-white rounded ">
-              <h6 className="welcome md:w-[15%] md:p-1 rounded-2xl text-getmoreBtnColor ">
+            <div class="homepage-subheading text-xl flex justify-center text-white rounded pt-32 pb-2">
+              <h6 className="welcome md:w-[15%] md:p-1 rounded-2xl text-getmoreBtnColor before:-ml-5">
                 Healthy Bites
               </h6>
             </div>
-            <h1 className="md:text-7xl text-5xl font-bold text-white md:p-8 pt-32 pb-10 ">
+            <h1 className="md:text-7xl text-5xl font-bold text-white md:p-8 pb-10 ">
               Healthy Food{" "}
               <strong className="text-getmoreBtnColor">Resturant</strong>
             </h1>

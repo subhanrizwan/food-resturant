@@ -5,17 +5,15 @@ function Section3() {
   return (
     <>
       <div className="container">
-        <div className="section3 md:flex md:items-center md:flex-col w-screen p-16 md:mt-20">
-          <div className="sub-title text-center font-light font-semibold text-getmoreBtnColor">
-            <h5 className="secttion2-subtitle bg-bgBorderColor w-44 p-1 text-center rounded-full md:ml-10 md:mb-3">
+        <div className="section3 md:flex md:items-center md:flex-col w-screen p-12 flex flex-col items-center">
+          <div className="sub-title text-center font-semibold text-getmoreBtnColor">
+            <h5 className="secttion2-subtitle bg-bgBorderColor w-44 p-1 text-center rounded-full md:ml-10 md:mb-3 mb-5">
               Our Benefits
             </h5>
           </div>
-          <div className="section-title text-center text-6xl font-bold pb-10">
-            <h1>
-              Why customers{" "}
-              <strong className="text-getmoreBtnColor">choose us</strong>
-            </h1>
+          <div className="section-title text-center md:text-6xl text-5xl font-bold pb-10">
+            <h1>Why customers </h1>
+            <strong className="text-getmoreBtnColor">choose us</strong>
           </div>
           <div className="description text-center md:w-[43%]">
             <p>
@@ -25,8 +23,8 @@ function Section3() {
               sit amet nisi iaculis, fringilla orci nec.
             </p>
           </div>
-          <div class="w-full md:flex md:justify-center p-10">
-            <div className="card-parent md:flex md:justify-center md:flex-wrap w-[90%] p-8 space-x-10">
+          <div class="w-full md:flex md:justify-center">
+            <div className="card-parent md:flex md:justify-center md:flex-wrap md:w-[90%] w-[100%] md:p-8 pt-16 md:space-x-10 md:space-y-0 space-y-10">
               <Testimonial />
               <Testimonial />
               <Testimonial />

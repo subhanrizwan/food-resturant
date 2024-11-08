@@ -3,14 +3,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/pagination";
-import Getmorebtn from "./getmorebtn";
-import ViewPlanBtn from "./viewPlan";
-import Card1 from "../assets/img/plat1.png";
-import Card2 from "../assets/img/plat2.png";
-import Card3 from "../assets/img/plat3.png";
-import Card4 from "../assets/img/plat4.png";
-import Card5 from "../assets/img/plat5.png";
-import Card6 from "../assets/img/plat6.png";
 import Slidercard1 from "./slidercard1";
 import { Autoplay, FreeMode, Pagination } from "swiper/modules";
 
