@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import Getmorebtn from "./getmorebtn";
+import { Link, NavLink } from "react-router-dom";
 function Header() {
   return (
     <>
@@ -13,44 +14,64 @@ function Header() {
           <nav>
             <ul className="hidden md:flex space-x-16 text-black">
               <li>
-                <a
-                  className="menu relative hover:text-getmoreBtnColor  duration-500 md:py-2"
-                  href="#home"
+                <NavLink
+                  to="/"
+                  className={({ isActive }) =>
+                    `menu relative hover:text-getmoreBtnColor ${
+                      isActive ? "text-getmoreBtnColor" : "text-black"
+                    } duration-500 md:py-2 cursor-pointer `
+                  }
                 >
                   Home
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
-                  href="#blog"
+                <NavLink
+                  to="/about"
+                  className={({ isActive }) =>
+                    `menu  hover:text-getmoreBtnColor ${
+                      isActive ? "text-getmoreBtnColor" : "text-black"
+                    } duration-500 md:py-2 cursor-pointer `
+                  }
                 >
                   About us
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
-                  href="#service"
+                <NavLink
+                  to="/product"
+                  className={({ isActive }) =>
+                    `menu  hover:text-getmoreBtnColor duration-500 ${
+                      isActive ? "text-getmoreBtnColor" : "text-black"
+                    } md:py-2 cursor-pointer `
+                  }
                 >
                   Products
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
-                  href="#solution"
+                <NavLink
+                  to="/blog"
+                  className={({ isActive }) =>
+                    `menu  hover:text-getmoreBtnColor duration-500 ${
+                      isActive ? "text-getmoreBtnColor" : "text-black"
+                    } md:py-2 cursor-pointer `
+                  }
                 >
                   Blog
-                </a>
+                </NavLink>
               </li>
               <li>
-                <a
-                  className="menu hover:text-getmoreBtnColor duration-500 md:py-2"
-                  href="#contact"
+                <NavLink
+                  to="/contact"
+                  className={({ isActive }) =>
+                    `menu  hover:text-getmoreBtnColor duration-500 ${
+                      isActive ? "text-getmoreBtnColor" : "text-black"
+                    } md:py-2 cursor-pointer `
+                  }
                 >
                   Contacts
-                </a>
+                </NavLink>
               </li>
             </ul>
           </nav>

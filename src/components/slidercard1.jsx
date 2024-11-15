@@ -7,7 +7,22 @@ import Getmorebtn from "./getmorebtn";
 import ViewPlanBtn from "./viewPlan";
 import Card6 from "../assets/img/plat6.png";
 
-const Slidercard1 = () => {
+const Slidercard1 = ({
+  title1,
+  title2,
+  title3,
+  title4,
+  title5,
+  title6,
+  title7,
+  price1,
+  price2,
+  price3,
+  price4,
+  price5,
+  price6,
+  price7,
+}) => {
   return (
     <>
       <SwiperSlide>
@@ -20,10 +35,24 @@ const Slidercard1 = () => {
             />
             <div className="p-8 pl-10">
               <div className="uppercase tracking-wide text-2xl text-black font-bold">
-                <h4>Office Menu</h4>
+                <h4>
+                  {title1}
+                  {title2}
+                  {title3}
+                  {title4}
+                  {title5}
+                  {title6}
+                  {title7}
+                </h4>
               </div>
               <p className="text-getmoreBtnColor text-[14px] font-semibold mt-0 pb-3">
-                1400-2000 kkal
+                {price1}
+                {price2}
+                {price3}
+                {price4}
+                {price5}
+                {price6}
+                {price7}
               </p>
               <div className="mt-2 text-slate-50 h-28 flex flex-col justify-between">
                 <Getmorebtn />

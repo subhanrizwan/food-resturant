@@ -1,6 +1,9 @@
 import React from "react";
 import Testimonial from "../components/testimonial";
-
+import Plat1 from "../assets/img/plat1.png";
+import Plat2 from "../assets/img/plat2.png";
+import Plat3 from "../assets/img/plat3.png";
+import Plat4 from "../assets/img/Plat4.png";
 function Section3() {
   return (
     <>
@@ -25,10 +28,22 @@ function Section3() {
           </div>
           <div class="w-full md:flex md:justify-center">
             <div className="card-parent md:flex md:justify-center md:flex-wrap md:w-[90%] w-[100%] md:p-8 pt-16 md:space-x-10 md:space-y-0 space-y-10">
-              <Testimonial />
-              <Testimonial />
-              <Testimonial />
-              <Testimonial />
+              <Testimonial
+                heading1={"Natural Food 1"}
+                description1={"Description1"}
+              />
+              <Testimonial
+                heading2={"Natural Food 2"}
+                description2={"Description2"}
+              />
+              <Testimonial
+                heading3={"Natural Food 3"}
+                description3={"Description3"}
+              />
+              <Testimonial
+                heading4={"Natural Food 4"}
+                description4={"Description4"}
+              />
             </div>
           </div>
         </div>

@@ -1,20 +1,35 @@
 import React from "react";
-import Header from "./components/header";
-import HeroSection from "./sections/heroSection";
-import HerSection2 from "./sections/herSection2";
 import CustomCursor from "./components/cursor";
-import Section3 from "./sections/section3";
+import Layout from "./components/Layout";
+import {
+  createBrowserRouter,
+  createRoutesFromElements,
+  Route,
+  RouterProvider,
+} from "react-router-dom";
+import About from "./pages/About";
+import Product from "./pages/Product";
+import Blog from "./pages/Blog";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
+
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />}>
+      <Route path="/" element={<Home />} />
+      <Route path="/About" element={<About />} />
+      <Route path="/product" element={<Product />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/contact" element={<Contact />} />
+    </Route>
+  )
+);
+
 function App() {
   return (
     <>
-      {/* cursor */}
+      <RouterProvider router={router} />
       <CustomCursor />
-
-      {/* sections */}
-      <Header />
-      <HeroSection />
-      <HerSection2 />
-      <Section3 />
     </>
   );
 }
