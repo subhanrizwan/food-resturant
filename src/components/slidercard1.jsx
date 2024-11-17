@@ -7,6 +7,10 @@ import Getmorebtn from "./getmorebtn";
 import ViewPlanBtn from "./viewPlan";
 import Card6 from "../assets/img/plat6.png";
 
+const images = [
+  "../assets/img/plat6.png", // Image 2
+];
+
 const Slidercard1 = ({
   title1,
   title2,
@@ -28,11 +32,14 @@ const Slidercard1 = ({
       <SwiperSlide>
         <div className="max-w-md mx-auto bg-cardBackgroundColor rounded-xl shadow-md overflow-hidden  md:max-w-1xl">
           <div className="md:flex flex">
+          {images.map((srcimg,index)=>(
             <img
+            key = {index}
               className="h-full w-60 -ml-28 object-cover md:h-full md:w-60 rounded md:-ml-28 mt-1 transform hover:translate-x-4 duration-500"
               src={Card6}
-              alt="Modern building architecture"
-            />
+              alt={`Image ${index + 1}`}
+              />
+          ))}
             <div className="p-8 pl-10">
               <div className="uppercase tracking-wide text-2xl text-black font-bold">
                 <h4>

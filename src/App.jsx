@@ -12,6 +12,7 @@ import Product from "./pages/Product";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import UserContextProvider from "./Context/UserContextProvider";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -27,10 +28,10 @@ const router = createBrowserRouter(
 
 function App() {
   return (
-    <>
+    <UserContextProvider>
       <RouterProvider router={router} />
       <CustomCursor />
-    </>
+    </UserContextProvider>
   );
 }
 
