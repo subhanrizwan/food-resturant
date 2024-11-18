@@ -32,14 +32,14 @@ const Slidercard1 = ({
       <SwiperSlide>
         <div className="max-w-md mx-auto bg-cardBackgroundColor rounded-xl shadow-md overflow-hidden  md:max-w-1xl">
           <div className="md:flex flex">
-          {images.map((srcimg,index)=>(
-            <img
-            key = {index}
-              className="h-full w-60 -ml-28 object-cover md:h-full md:w-60 rounded md:-ml-28 mt-1 transform hover:translate-x-4 duration-500"
-              src={Card6}
-              alt={`Image ${index + 1}`}
+            {images.map((srcimg, index) => (
+              <img
+                key={index}
+                className="h-full w-60 -ml-28 object-cover md:h-full md:w-60 rounded md:-ml-28 mt-1 transform hover:translate-x-4 duration-500"
+                src={srcimg}
+                alt={`Image ${index + 1}`}
               />
-          ))}
+            ))}
             <div className="p-8 pl-10">
               <div className="uppercase tracking-wide text-2xl text-black font-bold">
                 <h4>

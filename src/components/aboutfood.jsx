@@ -7,6 +7,8 @@ function Aboutfood() {
   return (
     <>
       <div className="about-section md:flex flex-wrap justify-between md:w-[65%] md:h-[450px] p-0 m-0 -mt-0">
+        {/* First Child */}
+
         <div className="child1 md:w-[42%] md:h-[100%] p-8">
           <h5 className="secttion2-subtitle bg-bgBorderColor w-44 p-1 text-center text-getmoreBtnColor font-semibold rounded-full md:ml-10 ml-11 mb-3 md:mb-0">
             Wholesome Flavors
@@ -29,6 +31,7 @@ function Aboutfood() {
             <Getmorebtn />
           </div>
         </div>
+        {/* Second Child */}
         <div className="child2 md:w-[55%] md:h-[100%] p-8 md:flex flex justify-between md:justify-around md:items-center">
           <div className="img-parent w-[40%] md:h-full">
             <img className="mix-blend-multiply" src={jug} alt="" />

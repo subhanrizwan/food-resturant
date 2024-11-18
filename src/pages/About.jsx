@@ -1,5 +1,6 @@
 import React from "react";
-
+import Login from "../Context/login";
+import Profile from "../Context/profile";
 function About() {
   return (
     <>
