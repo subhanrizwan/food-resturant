@@ -5,7 +5,7 @@ import Getmorebtn from "./getmorebtn";
 import { Link, NavLink } from "react-router-dom";
 import { HiUserPlus } from "react-icons/hi2";
 import { IoIosCart } from "react-icons/io";
-import CustomizedSwitches from "./switchbtn";
+// import CustomizedSwitches from "./switchbtn";
 
 function Header() {
   return (
@@ -108,7 +108,7 @@ function Header() {
               </NavLink>
             </li>
             {/* <Getmorebtn /> */}
-            <CustomizedSwitches />
+            {/* <CustomizedSwitches /> */}
           </div>
 
           {/* Mobile Menu Icon */}
