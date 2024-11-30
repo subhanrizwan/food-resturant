@@ -13,8 +13,6 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import UserContextProvider from "./Context/UserContextProvider";
-import Login from "./Context/login";
-import Profile from "./Context/profile";
 import Loginpage from "./pages/Loginpage";
 
 const router = createBrowserRouter(

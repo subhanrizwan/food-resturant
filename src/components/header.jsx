@@ -1,16 +1,40 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faHome, faUser } from "@fortawesome/free-solid-svg-icons";
 import Getmorebtn from "./getmorebtn";
 import { Link, NavLink } from "react-router-dom";
 import { HiUserPlus } from "react-icons/hi2";
 import { IoIosCart } from "react-icons/io";
-// import CustomizedSwitches from "./switchbtn";
+import CustomizedSwitches from "./switchbtn";
+// import useTheme, { ThemeContextProvider } from "../Context/ToggleContext";
+
+
 
 function Header() {
+  
+  // const [themeMode,setThemeMode] = useState("light");
+
+  // const lightTheme =()=>{
+  //   setThemeMode("light")
+  // }
+  // const darkTheme =()=>{
+  // setThemeMode("dark")
+  // }
+  
+  
+  // actual toggle switching
+  
+  // useEffect(() => {
+  
+  //   document.querySelector('html').classList.remove("light","dark");
+  //   document.querySelector('html').classList.add(themeMode)
+    
+  // }, [themeMode])
+  // ThemeContextProvider value={{themeMode,lightTheme,darkTheme}}
+  
   return (
     <>
-      <header className="bg-white">
+      <header className="bg-transparent">
         <div className="container mx-auto flex justify-between items-center p-6">
           <div className="main-logo text-2xl font-bold text-getmoreBtnColor">
             My logo
@@ -95,7 +119,7 @@ function Header() {
                 <IoIosCart />
               </NavLink>
             </li>
-            <li className="list-none">
+            <li className="list-none" id="listone" >
               <NavLink
                 to="/login"
                 className={({ isActive }) =>
@@ -108,7 +132,7 @@ function Header() {
               </NavLink>
             </li>
             {/* <Getmorebtn /> */}
-            {/* <CustomizedSwitches /> */}
+            <CustomizedSwitches  />
           </div>
 
           {/* Mobile Menu Icon */}
