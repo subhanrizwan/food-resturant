@@ -13,7 +13,7 @@ function Footer() {
         <div className="step1 md:w-[27%] h-96 p-5 text-white">
           <div className="resturant-title pr-16">
             <h1 className="text-4xl pb-3" >Food Delivery</h1>
-            <p className="pt-5 text-2xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam recusandae nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla nulla  mollitia est, optio laboriosam fuga?</p>
+            <p className="pt-5 text-1xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam recusandae nulla nulla nulla nulla nulla nulla nulla </p>
           </div>
           <div className="social-icons md:w-72 md:flex space-x-10  pt-10">
             <Link>
@@ -99,12 +99,12 @@ function Footer() {
               Contact Us
               </Link>
             </li>
-            <li className="pb-2">
+            <li className="pb-2 hover:translate-x-4 duration-500">
             <Link>
               Privacy Policy
               </Link>
             </li>
-            <li className="pb-0">
+            <li className="pb-0 hover:translate-x-4 duration-500">
             <Link>
               Faq Queries
               </Link>

@@ -6,32 +6,9 @@ import { Link, NavLink } from "react-router-dom";
 import { HiUserPlus } from "react-icons/hi2";
 import { IoIosCart } from "react-icons/io";
 import CustomizedSwitches from "./switchbtn";
-// import useTheme, { ThemeContextProvider } from "../Context/ToggleContext";
-
 
 
 function Header() {
-  
-  // const [themeMode,setThemeMode] = useState("light");
-
-  // const lightTheme =()=>{
-  //   setThemeMode("light")
-  // }
-  // const darkTheme =()=>{
-  // setThemeMode("dark")
-  // }
-  
-  
-  // actual toggle switching
-  
-  // useEffect(() => {
-  
-  //   document.querySelector('html').classList.remove("light","dark");
-  //   document.querySelector('html').classList.add(themeMode)
-    
-  // }, [themeMode])
-  // ThemeContextProvider value={{themeMode,lightTheme,darkTheme}}
-  
   return (
     <>
       <header className="bg-transparent">
@@ -136,10 +113,10 @@ function Header() {
           </div>
 
           {/* Mobile Menu Icon */}
-          <div className="md:hidden ">
-            <button className="text-2xl text-white hover:text-gray-400">
+          <div className="md:hidden">
+            <div className="text-2xl text-black hover:text-gray-400">
               <FontAwesomeIcon icon={faBars} />
-            </button>
+            </div>
           </div>
         </div>
       </header>

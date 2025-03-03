@@ -71,11 +71,11 @@ export default function CustomizedSwitches() {
         const status = e.currentTarget.checked
         setColor(status);
         if (status) {
-          document.body.style.backgroundColor = "#121212"; 
-          document.body.style.color = "#ffffff"; 
+          document.body.style.backgroundColor = "#000"; 
+          document.body.style.color = "#fff"; 
         } else {
-          document.body.style.backgroundColor = "#ffffff"; 
-          document.body.style.color = "#121212"; 
+          document.body.style.backgroundColor = "#fff"; 
+          document.body.style.color = "#000"; 
         }
 
     // setColor("red")

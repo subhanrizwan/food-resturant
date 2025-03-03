@@ -1,5 +1,4 @@
 import React from "react";
-import CustomCursor from "./components/cursor";
 import Layout from "./components/Layout";
 import {
   createBrowserRouter,
@@ -32,7 +31,6 @@ function App() {
   return (
     <UserContextProvider>
       <RouterProvider router={router} />
-      <CustomCursor />
     </UserContextProvider>
   );
 }
