@@ -10,9 +10,11 @@ function Aboutfood() {
         {/* First Child */}
 
         <div className="child1 md:w-[42%] md:h-[100%] p-8">
+          <div className="">
           <h5 className="secttion2-subtitle bg-bgBorderColor w-44 p-1 text-center text-getmoreBtnColor font-semibold rounded-full md:ml-10 ml-11 mb-3 md:mb-0">
             Wholesome Flavors
           </h5>
+          </div>
           <h1 className="md:text-5xl text-3xl font-bold pb-4 hover:text-getmoreBtnColor cursor-pointer">
             Healthy and tasty foods with
           </h1>

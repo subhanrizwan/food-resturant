@@ -11,10 +11,9 @@ const HeroSection = () => {
         <div className="hero-section flex flex-col bg-no-repeat bg-cover items-center text-center h-[800px] md:py-26"
           style={{
             width: "100vw",
-            // backgroundImage: `url(${Power})`,
           }}
         >
-          <div className="text-wrap w-3/4">
+          <div className="text-wrap w-3/4 ">
             <div class="homepage-subheading text-xl flex justify-center text-white rounded pt-32 pb-2">
               <h6 className="welcome md:w-[15%] md:p-1 rounded-2xl text-getmoreBtnColor before:-ml-5">
                 Healthy Bites
