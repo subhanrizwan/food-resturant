@@ -8,7 +8,7 @@ function Section3() {
   return (
     <>
       <div className="container">
-        <div className="section3 md:flex md:items-center md:flex-col w-screen p-12 flex flex-col items-center">
+        <div className="section3 md:flex md:items-center md:flex-col w-screen p-5 md:mb-20 sm:mt-[200px] mt-[200px] lg:mt-0 md:mt-52 flex flex-col items-center">
           <div className="sub-title text-center font-semibold text-getmoreBtnColor">
             <h5 className="secttion2-subtitle md:text-sm bg-bgBorderColor w-44 p-1 text-center rounded-full md:ml-10 md:mb-3 mb-5">
               Our Benefits
@@ -18,7 +18,7 @@ function Section3() {
             <h1>Why customers </h1>
             <strong className="text-getmoreBtnColor">choose us</strong>
           </div>
-          <div className="description text-center md:w-[43%]">
+          <div className="description text-center md:w-[43%] md:mb-10">
             <p>
               Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
               malesuada eros nec luctus laoreet. Fusce sodales consequat velit
@@ -27,7 +27,7 @@ function Section3() {
             </p>
           </div>
           <div class="w-full md:flex md:justify-center">
-            <div className="card-parent md:flex md:justify-center md:flex-wrap md:w-[90%] w-[100%] md:p-5 pt-16 md:space-x-10 md:space-y-0 space-y-10">
+            <div className="card-parent md:flex md:justify-center md:flex-wrap flex flex-wrap sm:justify-between justify-center w-[100%] md:p-5 sm:p-8 p-5 lg:p-0 pt-16 md:space-x-10 md:space-y-0 gap-5">
               <Testimonial
                 heading1={"Natural Food 1"}
                 description1={"Description1"}

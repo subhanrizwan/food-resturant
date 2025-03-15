@@ -13,7 +13,7 @@ function Testimonial({
 }) {
   return (
     <>
-      <div className="card flex flex-col justify-evenly items-center md:mb-5 bg-cardBackgroundColor md:h-80 rounded-3xl">
+      <div className="card flex flex-col justify-evenly items-center sm:w-64 sm:h-64 w-64 h-64 md:mb-5 bg-cardBackgroundColor md:h-80 rounded-3xl">
         <div className="quote pt-0 ">
           <img
             className="w-32 border-2 border-bgBorderColor rounded-full"

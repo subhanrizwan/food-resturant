@@ -6,10 +6,10 @@ import { IoMdDoneAll } from "react-icons/io";
 function Aboutfood() {
   return (
     <>
-      <div className="about-section md:flex flex-wrap md:justify-between md:w-[65%] md:h-[450px] p-0 m-0 -mt-0">
+      <div className="about-section md:flex flex-wrap md:justify-between md:w-[65%] md:h-[450px] -mt-0 ">
         {/* First Child */}
-        <div className="child1 sm:text-center text-center md:w-[42%] md:h-[100%] p-8">
-          <div className="sm:flex sm:justify-center flex justify-center">
+        <div className="child1 sm:text-center text-center md:text-start md:w-[42%] md:h-[100%] p-8">
+          <div className="sm:flex sm:justify-center flex justify-center md:justify-start">
           <h5 className="secttion2-subtitle md:text-sm bg-bgBorderColor w-44 p-1 md:mb-2 text-center text-getmoreBtnColor font-semibold rounded-full md:ml-10 ml-11 mb-3 md:mb-0">
             Wholesome Flavors
           </h5>
@@ -17,10 +17,10 @@ function Aboutfood() {
           <h1 className="md:text-4xl text-3xl font-bold pb-4 hover:text-getmoreBtnColor cursor-pointer">
             Healthy and tasty foods with
           </h1>
-          <div className="sub-title md:text-2xl text-3xl font-bold text-getmoreBtnColor pb-8">
+          <div className="sub-title text-3xl font-bold text-getmoreBtnColor pb-8">
             <h2>natural ingredients</h2>
           </div>
-          <div className="paragraph pb-14 leading-7 md:text-sm">
+          <div className="paragraph lg:pb-14 md:pb-8 sm:pb-4 leading-7 md:text-sm">
             <p>
               Quisque pretium dolor turpis, quis blandit turpis semper ut. Nam
               malesuada eros nec luctus laoreet. Fusce sodales consequat velit
@@ -28,13 +28,13 @@ function Aboutfood() {
               sit amet nisi iaculis, fringilla orci nec.
             </p>
           </div>
-          <div className="button">
+          <div className="">
             <Getmorebtn />
           </div>
         </div>
         {/* Second Child */}
         <div className="child2 md:w-[55%] md:h-[100%] p-8 md:flex flex justify-between md:justify-around md:items-center sm:p-5 p-5">
-          <div className="img-parent sm:flex sm:justify-center flex justify-center w-[100%] md:h-full">
+          <div className="img-parent sm:flex sm:justify-center flex justify-center w-[100%] md:h-full md:w-[100%] sm:h-96 h-72">
             <img className="mix-blend-multiply" src={jug} alt="" />
           </div>
           {/* <div className="list w-[40%] md:h-full flex items-center">

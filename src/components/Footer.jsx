@@ -9,13 +9,13 @@ function Footer() {
   return (
     <>
       <div className="container">
-        <footer className="md:flex mx-auto md:w-screen md:justify-center bg-getmoreBtnColor p-8 ">
-        <div className="step1 md:w-[27%] h-96 p-5 text-white">
+        <footer className="flex sm:flex-wrap flex-wrap mx-auto md:w-screen sm:w-screen md:justify-center bg-getmoreBtnColor p-8 ">
+        <div className="step1 md:w-[40%] md:h-96 sm:h-68 p-5 text-white">
           <div className="resturant-title pr-16">
-            <h1 className="text-4xl md:text-3xl pb-3" >Food Delivery</h1>
-            <p className="pt-5 text-1xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam recusandae nulla nulla nulla nulla nulla nulla nulla </p>
+            <h1 className="text-4xl md:text-2xl pb-3" >Food Delivery</h1>
+            <p className="pt-5 text-1xl md:text-md" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam recusandae nulla nulla nulla nulla nulla nulla nulla </p>
           </div>
-          <div className="social-icons md:w-72 md:flex space-x-10 md:space-x-5 pt-10">
+          <div className="social-icons md:w-72 md:flex flex space-x-10 md:space-x-5 pt-10">
             <Link>
             <FaLinkedin className="text-3xl md:text-2xl" />
             </Link>
@@ -30,7 +30,7 @@ function Footer() {
             </Link>
           </div>
         </div>
-        <div className="step2 menus md:w-[16%] md:h-96 p-5 text-white">
+        <div className="step2 menus md:w-[20%] md:h-96 p-5 text-white">
           <h2 className="text-2xl" >Our Menus</h2>
           <ul className="pt-5 text-1xl">
             <li className="pb-2 hover:translate-x-4 duration-500">
@@ -58,11 +58,7 @@ function Footer() {
               Vegetable
               </Link>
             </li>
-            <li className="pb-2 hover:translate-x-4 duration-500">
-            <Link>
-              Sea Food
-              </Link>
-            </li>
+         
             <li className="pb-2 hover:translate-x-4 duration-500">
             <Link>
               Desert
@@ -75,7 +71,7 @@ function Footer() {
             </li>
           </ul>
           </div>
-        <div className="step3 menus md:w-[16%] h-92 height-auto p-5 text-white">
+        <div className="step3 menus md:w-[20%] h-92 height-auto p-5 text-white">
         <h2 className="text-2xl" >Useful Links</h2>
 
         <ul className="pt-5 text-1xl">
@@ -112,7 +108,7 @@ function Footer() {
            
           </ul>
           </div>
-        <div className="step4 menus md:w-[16%] md:h-96 p-5 text-white">
+        <div className="step4 menus md:w-[20%] md:h-96 p-5 text-white">
         <h2 className="text-2xl" >Contact us</h2>
         <ul className="pt-5 text-1xl">
             <li className="pb-2">
