@@ -81,7 +81,7 @@ function Header() {
             </ul>
           </nav>
           {/* navbar 2 */}
-          <div className="flex justify-end relative items-center space-x-6 sm:left-28">
+          <div className="flex justify-end relative items-center space-x-6 sm:left-32 lg:left-0 md:left-0">
             <li className="list-none">
               <NavLink
                 to="/contact"
@@ -107,7 +107,9 @@ function Header() {
               </NavLink>
             </li>
             {/* <Getmorebtn /> */}
+            <li className="list-none sm:pr-5">
             <CustomizedSwitches  />
+            </li>
           </div>
 
           {/* Mobile Menu Icon */}

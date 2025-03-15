@@ -6,10 +6,10 @@ import { IoMdDoneAll } from "react-icons/io";
 function Aboutfood() {
   return (
     <>
-      <div className="about-section md:flex flex-wrap justify-between md:w-[65%] md:h-[450px] p-0 m-0 -mt-0">
+      <div className="about-section md:flex flex-wrap md:justify-between md:w-[65%] md:h-[450px] p-0 m-0 -mt-0">
         {/* First Child */}
-        <div className="child1 md:w-[42%] md:h-[100%] p-8">
-          <div className="">
+        <div className="child1 sm:text-center text-center md:w-[42%] md:h-[100%] p-8">
+          <div className="sm:flex sm:justify-center flex justify-center">
           <h5 className="secttion2-subtitle md:text-sm bg-bgBorderColor w-44 p-1 md:mb-2 text-center text-getmoreBtnColor font-semibold rounded-full md:ml-10 ml-11 mb-3 md:mb-0">
             Wholesome Flavors
           </h5>
@@ -33,8 +33,8 @@ function Aboutfood() {
           </div>
         </div>
         {/* Second Child */}
-        <div className="child2 md:w-[55%] md:h-[100%] p-8 md:flex flex justify-between md:justify-around md:items-center">
-          <div className="img-parent w-[100%] md:h-full">
+        <div className="child2 md:w-[55%] md:h-[100%] p-8 md:flex flex justify-between md:justify-around md:items-center sm:p-5 p-5">
+          <div className="img-parent sm:flex sm:justify-center flex justify-center w-[100%] md:h-full">
             <img className="mix-blend-multiply" src={jug} alt="" />
           </div>
           {/* <div className="list w-[40%] md:h-full flex items-center">
