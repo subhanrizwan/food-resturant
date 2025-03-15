@@ -10,7 +10,7 @@ function Footer() {
     <>
       <div className="container">
         <footer className="flex sm:flex-wrap flex-wrap mx-auto md:w-screen sm:w-screen md:justify-center bg-getmoreBtnColor p-8 ">
-        <div className="step1 md:w-[40%] md:h-96 sm:h-68 p-5 text-white">
+        <div className="step1 md:w-[35%] md:h-96 sm:h-68 p-5 text-white">
           <div className="resturant-title pr-16">
             <h1 className="text-4xl md:text-2xl pb-3" >Food Delivery</h1>
             <p className="pt-5 text-1xl md:text-md" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam recusandae nulla nulla nulla nulla nulla nulla nulla </p>

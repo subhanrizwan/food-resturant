@@ -9,12 +9,15 @@ import CustomizedSwitches from "./switchbtn";
 
 
 function Header() {
+
+  const [open,setOpen] = useState(false);
+  
   return (
     <>
       <header className="bg-transparent">
         <div className="container-fluid mx-auto flex justify-between items-center p-5">
           <div className="main-logo text-2xl font-bold text-getmoreBtnColor">
-            My logo
+           logo
           </div>
           <nav>
             <ul className="hidden md:flex lg:space-x-16 md:space-x-8 text-black">
@@ -81,7 +84,7 @@ function Header() {
             </ul>
           </nav>
           {/* navbar 2 */}
-          <div className="flex justify-end relative items-center space-x-6 sm:left-32 lg:left-0 md:left-0">
+          <div className="flex justify-end relative items-center md:space-x-6 space-x-4 sm:left-32 lg:left-0 md:left-0 left-10">
             <li className="list-none">
               <NavLink
                 to="/contact"
@@ -113,12 +116,31 @@ function Header() {
           </div>
 
           {/* Mobile Menu Icon */}
-          <div className="md:hidden">
-            <div className="text-2xl text-black hover:text-gray-400">
+          <div className="md:hidden p-0">
+            <div onClick={()=> setOpen(!open)} className="text-2xl text-black hover:text-gray-400">
               <FontAwesomeIcon icon={faBars} />
             </div>
           </div>
         </div>
+
+           {/* Mobile Menu */}
+           {open && (
+          <div className="md:hidden bg-white p-5 shadow-md absolute top-16 left-0 w-full z-50">
+            <ul className="flex flex-col space-y-4 text-black">
+              {["Home", "About us", "Products", "Blog", "Contacts"].map((item, index) => (
+                <li key={index}>
+                  <NavLink
+                    to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+                    className="block text-lg hover:text-getmoreBtnColor"
+                    onClick={() => setOpen(false)}
+                  >
+                    {item}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </header>
     </>
   );
