@@ -30,7 +30,7 @@ const HeroSection = () => {
               nemo non!
             </p>
           </div>
-          <div className="button-parent md:space-x-6 space-x-3 space-y-">
+          <div className="button-parent md:space-x-6 space-x-3 ">
             <Getmorebtn />
             <ViewPlanBtn />
           </div>

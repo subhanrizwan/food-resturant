@@ -12,12 +12,12 @@ function Header() {
   return (
     <>
       <header className="bg-transparent">
-        <div className="container mx-auto flex justify-between items-center p-6">
+        <div className="container-fluid mx-auto flex justify-between items-center p-5">
           <div className="main-logo text-2xl font-bold text-getmoreBtnColor">
             My logo
           </div>
           <nav>
-            <ul className="hidden md:flex space-x-16 text-black">
+            <ul className="hidden md:flex lg:space-x-16 md:space-x-8 text-black">
               <li>
                 <NavLink
                   to="/"
@@ -80,10 +80,8 @@ function Header() {
               </li>
             </ul>
           </nav>
-
           {/* navbar 2 */}
-
-          <div className="flex justify-end first relative items-center space-x-6">
+          <div className="flex justify-end relative items-center space-x-6 sm:left-28">
             <li className="list-none">
               <NavLink
                 to="/contact"
