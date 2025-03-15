@@ -26,19 +26,19 @@ export default function Slider() {
         breakpoints={{
           300: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           320: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           1600: {
             slidesPerView: 3,

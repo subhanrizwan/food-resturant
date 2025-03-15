@@ -9,24 +9,24 @@ function Footer() {
   return (
     <>
       <div className="container">
-        <footer className="md:flex mx-auto md:w-screen md:justify-center bg-getmoreBtnColor pt-8">
+        <footer className="md:flex mx-auto md:w-screen md:justify-center bg-getmoreBtnColor p-8 ">
         <div className="step1 md:w-[27%] h-96 p-5 text-white">
           <div className="resturant-title pr-16">
-            <h1 className="text-4xl pb-3" >Food Delivery</h1>
+            <h1 className="text-4xl md:text-3xl pb-3" >Food Delivery</h1>
             <p className="pt-5 text-1xl" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea veniam recusandae nulla nulla nulla nulla nulla nulla nulla </p>
           </div>
-          <div className="social-icons md:w-72 md:flex space-x-10  pt-10">
+          <div className="social-icons md:w-72 md:flex space-x-10 md:space-x-5 pt-10">
             <Link>
-            <FaLinkedin className="text-3xl" />
+            <FaLinkedin className="text-3xl md:text-2xl" />
             </Link>
             <Link>
-            <FaGithub className="text-3xl"/>
+            <FaGithub className="text-3xl md:text-2xl"/>
             </Link>
             <Link>
-            <FaTwitter className="text-3xl"/>
+            <FaTwitter className="text-3xl md:text-2xl"/>
             </Link>
             <Link>
-            <MdMarkEmailUnread className="text-3xl"/>
+            <MdMarkEmailUnread className="text-3xl md:text-2xl"/>
             </Link>
           </div>
         </div>

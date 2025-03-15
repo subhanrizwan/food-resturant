@@ -30,7 +30,7 @@ const Slidercard1 = ({
   return (
     <>
       <SwiperSlide>
-        <div className="max-w-md mx-auto bg-cardBackgroundColor rounded-xl shadow-md overflow-hidden  md:max-w-1xl">
+        <div className="max-w-md mx-auto bg-cardBackgroundColor rounded-xl shadow-md overflow-hidden md:max-w-1xl">
           <div className="md:flex flex">
             {images.map((srcimg, index) => (
               <img

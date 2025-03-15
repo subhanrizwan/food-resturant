@@ -10,7 +10,7 @@ function Section3() {
       <div className="container">
         <div className="section3 md:flex md:items-center md:flex-col w-screen p-12 flex flex-col items-center">
           <div className="sub-title text-center font-semibold text-getmoreBtnColor">
-            <h5 className="secttion2-subtitle bg-bgBorderColor w-44 p-1 text-center rounded-full md:ml-10 md:mb-3 mb-5">
+            <h5 className="secttion2-subtitle md:text-sm bg-bgBorderColor w-44 p-1 text-center rounded-full md:ml-10 md:mb-3 mb-5">
               Our Benefits
             </h5>
           </div>
