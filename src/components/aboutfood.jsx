@@ -28,7 +28,7 @@ function Aboutfood() {
               sit amet nisi iaculis, fringilla orci nec.
             </p>
           </div>
-          <div className="">
+          <div className="sm:p-1 pt-5 md:p-0">
             <Getmorebtn />
           </div>
         </div>

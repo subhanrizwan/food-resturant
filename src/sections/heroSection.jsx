@@ -29,11 +29,12 @@ const HeroSection = () => {
               nam sequi temporibus pariatur reiciendis quo esse iste dolorum
               nemo non!
             </p>
-          <div className="button-parent md:space-x-6 space-x-3 flex justify-evenly"> 
+          </div>
+         
+          <div className="button-parent md:space-x-6 space-x-3"> 
             <Getmorebtn />
             <ViewPlanBtn />
            </div>
-          </div>
         </div>
       </div>
     </>

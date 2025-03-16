@@ -7,14 +7,11 @@ import { HiUserPlus } from "react-icons/hi2";
 import { IoIosCart } from "react-icons/io";
 import CustomizedSwitches from "./switchbtn";
 
-
 function Header() {
-
   const [open,setOpen] = useState(false);
-  
   return (
     <>
-      <header className="bg-transparent">
+      <header >
         <div className="container-fluid mx-auto flex justify-between items-center p-5">
           <div className="main-logo text-2xl font-bold text-getmoreBtnColor">
            logo

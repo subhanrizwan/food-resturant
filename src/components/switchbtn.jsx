@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
+import Header from './header';
 // import useTheme from '../Context/ToggleContext';
 // import { ThemeContextProvider } from '../Context/ToggleContext';
 
@@ -71,9 +72,11 @@ export default function CustomizedSwitches() {
         const status = e.currentTarget.checked
         setColor(status);
         if (status) {
-          document.body.style.backgroundColor = "#000"; 
-          document.body.style.color = "#fff"; 
-        } else {
+          document.body.style.backgroundColor ="black"; 
+          document.body.style.color = "#fff";
+           
+        } 
+        else {
           document.body.style.backgroundColor = "#fff"; 
           document.body.style.color = "#000"; 
         }
@@ -105,6 +108,8 @@ export default function CustomizedSwitches() {
   //   }
   // }
   return (
+    <>
+    {/* <Header color={color} />  */}
     <FormGroup>
       <FormControlLabel
         control={<MaterialUISwitch sx={{ m: 1 }}
@@ -114,6 +119,7 @@ export default function CustomizedSwitches() {
      
     </FormGroup>
 
+</>
   );
 }
 // onChange={HandleBtn} 
