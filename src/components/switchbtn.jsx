@@ -74,11 +74,13 @@ export default function CustomizedSwitches() {
         if (status) {
           document.body.style.backgroundColor ="black"; 
           document.body.style.color = "#fff";
-           
+
         } 
         else {
           document.body.style.backgroundColor = "#fff"; 
-          document.body.style.color = "#000"; 
+          document.body.style.color = "#000";
+
+         
         }
 
     // setColor("red")

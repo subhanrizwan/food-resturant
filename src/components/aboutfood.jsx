@@ -34,7 +34,7 @@ function Aboutfood() {
         </div>
         {/* Second Child */}
         <div className="child2 md:w-[55%] md:h-[100%] p-8 md:flex flex justify-between md:justify-around md:items-center sm:p-5 p-5">
-          <div className="img-parent sm:flex sm:justify-center flex justify-center w-[100%] md:h-full md:w-[100%] sm:h-96 h-72">
+          <div className="img-parent z-50 sm:flex sm:justify-center flex justify-center w-[100%] md:h-full md:w-[100%] sm:h-96 h-72">
             <img className="mix-blend-multiply" src={jug} alt="" />
           </div>
           {/* <div className="list w-[40%] md:h-full flex items-center">

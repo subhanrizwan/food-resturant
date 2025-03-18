@@ -9,9 +9,18 @@ import CustomizedSwitches from "./switchbtn";
 
 function Header() {
   const [open,setOpen] = useState(false);
+  const [isBlackBg, setIsBlackBg] = useState(false);
+
+  const menu  =[
+   { name: "Home", path: "/" },
+  { name: "About us", path: "/about" },
+  { name: "Products", path: "/product" },
+  { name: "Blog", path: "/blog" },
+  { name: "Contacts", path: "/contact" }
+]
   return (
     <>
-      <header >
+      <header>
         <div className="container-fluid mx-auto flex justify-between items-center p-5">
           <div className="main-logo text-2xl font-bold text-getmoreBtnColor">
            logo
@@ -91,7 +100,7 @@ function Header() {
                   } md:py-2 cursor-pointer text-xl `
                 }
               >
-                <IoIosCart />
+                <IoIosCart className={`text-xl ${isBlackBg ? "text-white" : "text-black"}`} />
               </NavLink>
             </li>
             <li className="list-none" id="listone" >
@@ -103,7 +112,7 @@ function Header() {
                   } md:py-2 cursor-pointer text-xl`
                 }
               >
-                <HiUserPlus />
+                <HiUserPlus className={`text-xl ${isBlackBg ? "text-white" : "text-black"}`} />
               </NavLink>
             </li>
             {/* <Getmorebtn /> */}
@@ -120,18 +129,19 @@ function Header() {
           </div>
         </div>
 
+
            {/* Mobile Menu */}
            {open && (
           <div className="md:hidden bg-white p-5 shadow-md absolute top-16 left-0 w-full z-50">
             <ul className="flex flex-col space-y-4 text-black">
-              {["Home", "About us", "Products", "Blog", "Contacts"].map((item, index) => (
+              {menu.map((item, index) => (
                 <li key={index}>
                   <NavLink
-                    to={`/${item.toLowerCase().replace(/\s+/g, "")}`}
+                    to={item.path}
                     className="block text-lg hover:text-getmoreBtnColor"
                     onClick={() => setOpen(false)}
                   >
-                    {item}
+                    {item.name}
                   </NavLink>
                 </li>
               ))}

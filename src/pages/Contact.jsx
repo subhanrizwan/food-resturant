@@ -26,8 +26,7 @@ function Contact() {
   return (
     <>
         <TextField
-          // id="outlined-basic"
-          value={username}
+           value={username}
           onChange={(e) => setUsername(e.target.value)}
           label="Name"
           variant="outlined"
@@ -35,7 +34,6 @@ function Contact() {
         <br />
         <br />
         <TextField
-          // id="outlined-basic"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           label="Password"
