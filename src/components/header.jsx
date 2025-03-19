@@ -116,9 +116,9 @@ function Header() {
               </NavLink>
             </li>
             {/* <Getmorebtn /> */}
-            <li className="list-none sm:pr-5">
+            {/* <li className="list-none sm:pr-5">
             <CustomizedSwitches  />
-            </li>
+            </li> */}
           </div>
 
           {/* Mobile Menu Icon */}

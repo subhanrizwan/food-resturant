@@ -25,7 +25,13 @@ function Contact() {
 
   return (
     <>
-        <TextField
+    <div className="p-5 flex flex-col">
+      <div className="login-title text-4xl text-center text-getmoreBtnColor p-5">
+        <h1>Contact</h1>
+      </div>
+      <div className="form text-center">
+      <TextField
+      className="focus:border-getmoreBtnColor hover:border-getmoreBtnColor" 
            value={username}
           onChange={(e) => setUsername(e.target.value)}
           label="Name"
@@ -43,10 +49,14 @@ function Contact() {
         <br />
         <button
           onClick={HandleSubmit}
-          class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+          className="bg-getmoreBtnColor hover:bg-getmoreBtnColor text-white font-bold py-2 px-4 rounded"
         >
           Button
         </button>
+      </div>
+ 
+    </div>
+      
     </>
   );
 }

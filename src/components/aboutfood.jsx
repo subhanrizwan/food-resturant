@@ -1,12 +1,13 @@
 import React from "react";
 import Getmorebtn from "./getmorebtn";
 import jug from "../assets/img/jug.jpg";
+import portrait from "../assets/img/portrait1.png";
 import { IoMdDoneAll } from "react-icons/io";
 
 function Aboutfood() {
   return (
     <>
-      <div className="about-section md:flex flex-wrap md:justify-between md:w-[65%] md:h-[450px] -mt-0 ">
+      <div className="about-section md:flex flex-wrap md:justify-between md:w-[65%] md:h-[450px]  -mt-0 ">
         {/* First Child */}
         <div className="child1 sm:text-center text-center md:text-start md:w-[42%] md:h-[100%] p-8">
           <div className="sm:flex sm:justify-center flex justify-center md:justify-start">
@@ -35,7 +36,7 @@ function Aboutfood() {
         {/* Second Child */}
         <div className="child2 md:w-[55%] md:h-[100%] p-8 md:flex flex justify-between md:justify-around md:items-center sm:p-5 p-5">
           <div className="img-parent z-50 sm:flex sm:justify-center flex justify-center w-[100%] md:h-full md:w-[100%] sm:h-96 h-72">
-            <img className="mix-blend-multiply" src={jug} alt="" />
+            <img className="mix-blend-multiply" src={portrait} alt="" />
           </div>
           {/* <div className="list w-[40%] md:h-full flex items-center">
             <ul className=" space-y-6">
