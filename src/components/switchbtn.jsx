@@ -5,8 +5,6 @@ import FormGroup from '@mui/material/FormGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import Switch from '@mui/material/Switch';
 import Header from './header';
-// import useTheme from '../Context/ToggleContext';
-// import { ThemeContextProvider } from '../Context/ToggleContext';
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -83,15 +81,6 @@ export default function CustomizedSwitches() {
          
         }
 
-    // setColor("red")
-    // const status = e.currentTarget.checked
-    // if(status){
-    //   setColor("red")
-    // }else{
-    //   setColor("yellow")
-    // }
-
-// setColor("red")
   }
   // useEffect(() => {
   //   document.querySelector('html').classList.remove("light","dark");
